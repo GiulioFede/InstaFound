@@ -47,7 +47,11 @@ public class SignUpController implements Initializable {
             String user = usernameTF.getText();
             String password = passwordTF.getText();
             String region = regionTF.getText();
-            int cap = Integer.valueOf(capTF.getText());
+            int cap = -1;
+            try {
+                cap = Integer.valueOf(capTF.getText());
+            }catch (Exception e){
+            }
             String province = provinceTF.getText();
             if (user.isEmpty() || password.isEmpty() || region.isEmpty() || province.isEmpty() || cap <= 0) {
                 missingFields.append("Error: missing");
