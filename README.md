@@ -4,4 +4,7 @@ Instafound is a social network based on crowdfunding that uses NoSQL technologie
 All the steps of the creation, from the idea to the justifications, up to its implementation are explained in the documentation "DocumentazioneProgetto.pdf". 
 Some images in the documentation may be unclear. For this reason there are some images in the "UML" folder.
 
+A dump folder contains the MongoDB and Neo4j dumps useful to quickly and consistently rebuild the two databases.
+
 NB: This implementation includes code for connecting both locally and remotely with MongoDB and Neo4j. However the documentation refers only to the "remote" case.
+
