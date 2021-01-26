@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="profilePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1508.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.instafound.javafx.controller.FriendsListController">
+   <children>
+      <Label fx:id="backToHomeFromFriendsList" layoutX="28.0" layoutY="6.0" onMouseClicked="#backToHome" text="come back" textFill="#00a1ff">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutY="235.0" prefHeight="379.0" prefWidth="1508.0" style="-fx-background-color: transparent; -fx-hbar-policy: never; -fx-vbar-policy: never;">
+         <content>
+            <HBox fx:id="boxFriendsList" prefHeight="374.0" prefWidth="1508.0" />
+         </content>
+      </ScrollPane>
+      <Label fx:id="labelNumberOfFriends" layoutX="40.0" layoutY="70.0" text="friends">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imageBackToHomeFromeFriendsList" fitHeight="17.0" fitWidth="17.0" layoutX="7.0" layoutY="15.0" onMouseClicked="#backToHome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/leftArrow.jpg" />
+         </image>
+      </ImageView>
+      <ProgressIndicator fx:id="progressIndicatorFriendsList" layoutX="8.0" layoutY="76.0" prefHeight="27.0" prefWidth="26.0" />
+   </children>
+</Pane>

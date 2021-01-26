@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane fx:controller="com.instafound.javafx.controller.LoadMoreButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="88.0" prefWidth="912.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button alignment="CENTER" layoutX="395.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#loadMoreCampaigns" prefHeight="39.0" prefWidth="122.0" styleClass="loadMoreButton" text="load more" />
+   </children>
+</Pane>

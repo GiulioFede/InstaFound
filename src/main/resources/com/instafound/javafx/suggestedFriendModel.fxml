@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="133.0" prefWidth="120.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.instafound.javafx.controller.SuggestedFriendController">
+   <children>
+      <Circle fx:id="profileImageSuggestedFriend" fill="DODGERBLUE" layoutX="61.0" layoutY="56.0" radius="39.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Label fx:id="usernameSuggestedFriend" alignment="CENTER" layoutY="97.0" prefHeight="17.0" prefWidth="120.0" style="-fx-font-weight: bold;" text="username">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="locationSuggestedFriend" alignment="CENTER" layoutY="109.0" prefHeight="17.0" prefWidth="120.0" text="91011,Sicily,Italy">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelInCommon" alignment="CENTER" layoutY="119.0" prefHeight="17.0" prefWidth="120.0" text="in common">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Label>
+      <Label fx:id="buttonAddSuggestedFriend" alignment="CENTER" layoutX="24.0" layoutY="20.0" onMouseClicked="#addSuggestedFriend" prefHeight="17.0" prefWidth="18.0" style="-fx-background-color: orange;" styleClass="addSuggestedFriend" text="+" textFill="WHITE" />
+   </children>
+</Pane>

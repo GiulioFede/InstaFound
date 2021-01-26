@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="teamPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1508.0" stylesheets="@settingsOfCSS.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.instafound.javafx.controller.TeamViewController">
+   <Pane fx:id="frostPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1508.0">
+       <children>
+         <Label fx:id="createNewTeamLabel" layoutX="1335.0" layoutY="41.0" onMouseClicked="#openCreateTeamView" text="create new team" textFill="#00a1ff">
+            <font>
+               <Font size="21.0" />
+            </font>
+         </Label>
+      <Label fx:id="backToHomeFromTeamView" layoutX="28.0" layoutY="6.0" onMouseClicked="#backToHome" text="come back" textFill="#00a1ff">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <ProgressIndicator fx:id="progressIndicatorTeams" layoutX="8.0" layoutY="76.0" prefHeight="27.0" prefWidth="26.0" />
+      <ImageView fx:id="imageBackToHomeFromTeamView" fitHeight="17.0" fitWidth="17.0" layoutX="7.0" layoutY="15.0" onMouseClicked="#backToHome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/leftArrow.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelTeams" layoutX="40.0" layoutY="70.0" text="teams ">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="3.0" layoutY="140.0" prefHeight="424.0" prefWidth="1505.0" style="-fx-background-color: transparent; -fx-hbar-policy: never; -fx-vbar-policy: never;">
+         <content>
+            <HBox fx:id="boxTeams" prefHeight="432.0" prefWidth="1504.0" />
+         </content>
+      </ScrollPane>
+      <Label fx:id="labelMembers" layoutX="40.0" layoutY="586.0" text="members">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <ProgressIndicator fx:id="progressIndicatorMembers" layoutX="9.0" layoutY="593.0" prefHeight="27.0" prefWidth="26.0" />
+      <ScrollPane layoutX="3.0" layoutY="646.0" prefHeight="255.0" prefWidth="1505.0" style="-fx-background-color: transparent; -fx-hbar-policy: never; -fx-vbar-policy: never;">
+         <content>
+            <HBox fx:id="boxMembers" prefHeight="251.0" prefWidth="1514.0" />
+         </content>
+      </ScrollPane>
+      <Pane id="areaAddMember" layoutX="1412.0" layoutY="555.0" prefHeight="76.0" prefWidth="77.0">
+         <children>
+            <ImageView id="addMemberButton" fx:id="addMemberImage" fitHeight="83.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/addMembers.png" />
+               </image>
+            </ImageView>
+            <Label id="addMemberLabel" fx:id="addMemberButton" alignment="CENTER" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="-27.0" layoutY="-2.0" onMouseClicked="#openFriendsList" opacity="0.0" prefHeight="33.0" prefWidth="107.0" style="-fx-background-color: #0080ff; -fx-background-radius: 22px 22px 22px 22px;" text="add member" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+   </Pane>
+<Pane fx:id="memberDetailsPane" layoutX="571.0" layoutY="183.0" prefHeight="331.0" prefWidth="470.0" style="-fx-background-color: white;" visible="false">
+      <children>
+         <Label fx:id="closeDetailsMemberLabel" layoutX="403.0" layoutY="-2.0" onMouseClicked="#closeMemberDetailsPlane" text="close">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+         <ImageView fx:id="closeDetailsMemberImage" fitHeight="19.0" fitWidth="24.0" layoutX="448.0" layoutY="3.0" onMouseClicked="#closeMemberDetailsPlane" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@images/CloseIcon.png" />
+            </image>
+         </ImageView>
+         <ListView fx:id="listViewOtherTeams" layoutX="9.0" layoutY="75.0" prefHeight="247.0" prefWidth="453.0" style="-fx-background-color: transparent;" />
+         <Label alignment="CENTER" layoutY="42.0" prefHeight="27.0" prefWidth="470.0" text="other teams of belonging">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+      </children>
+   </Pane>
+   <Pane fx:id="listOfFriendsToAdAsMemberPane" layoutX="581.0" layoutY="80.0" prefHeight="663.0" prefWidth="391.0" style="-fx-background-color: white;" visible="false">
+      <children>
+         <ScrollPane layoutY="78.0" prefHeight="585.0" prefWidth="391.0" style="-fx-background-color: transparent; -fx-hbar-policy: never; -fx-vbar-policy: never;">
+            <content>
+               <VBox fx:id="boxListOfFriendsToAdd" prefHeight="585.0" prefWidth="391.0" />
+            </content>
+         </ScrollPane>
+         <Label fx:id="closeListOfFriendsToAddLabel" layoutX="326.0" layoutY="-4.0" onMouseClicked="#closeMemberDetailsPlane" text="close">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+         <ImageView fx:id="closeListOfFriendsToAddImage" fitHeight="19.0" fitWidth="24.0" layoutX="371.0" layoutY="1.0" onMouseClicked="#closeMemberDetailsPlane" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@images/CloseIcon.png" />
+            </image>
+         </ImageView>
+         <Label alignment="CENTER" layoutY="42.0" prefHeight="27.0" prefWidth="391.0" text="list of addable friends">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+         <ProgressIndicator fx:id="progressIndicatorListOfFriendsToAdd" layoutX="70.0" layoutY="47.0" prefHeight="17.0" prefWidth="54.0" />
+      </children>
+   </Pane>
+   <Pane fx:id="newTeamPane" layoutX="484.0" layoutY="157.0" prefHeight="575.0" prefWidth="631.0" style="-fx-background-color: transparent;" visible="false">
+      <children>
+         <Pane layoutX="141.0" layoutY="91.0" prefHeight="341.0" prefWidth="343.0">
+            <children>
+               <Circle fx:id="circleImageNewTeam" fill="#0088ff" layoutX="172.0" layoutY="171.0" radius="161.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+               <Label fx:id="labelTitleNewTeam" alignment="CENTER" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="16.0" layoutY="155.0" mouseTransparent="true" prefHeight="45.0" prefWidth="312.0" style="-fx-background-color: black; -fx-background-color: rgba(0, 0, 0, 0.1); -fx-background-radius: 12px 42px 12px 42px;" text="new Team" textFill="WHITE">
+                  <font>
+                     <Font size="32.0" />
+                  </font>
+               </Label>
+               <Button id="newTeamLabel" layoutX="230.0" layoutY="21.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="65.0" text="new" />
+            </children>
+         </Pane>
+         <TextField fx:id="areaNameOfNewTeam" alignment="CENTER" layoutX="241.0" layoutY="431.0" prefHeight="45.0" prefWidth="149.0" promptText="name" />
+         <Button id="createNewTeamButton" fx:id="createNewTeamButton" layoutX="230.0" layoutY="494.0" mnemonicParsing="false" onMouseClicked="#createNewTeam" prefHeight="39.0" prefWidth="172.0" text="create new team" />
+         <ProgressIndicator fx:id="progressIndicatorNewTeam" layoutX="406.0" layoutY="496.0" prefHeight="36.0" prefWidth="40.0" visible="false" />
+         <Label alignment="CENTER" layoutY="544.0" prefHeight="20.0" prefWidth="631.0" text="error mex" textFill="RED" visible="false">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <ImageView fx:id="closeNewTeamPane" fitHeight="31.0" fitWidth="32.0" layoutX="498.0" layoutY="44.0" onMouseClicked="#hideFrostEffect" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@images/CloseIcon2.png" />
+            </image>
+         </ImageView>
+      </children>
+   </Pane>
+</Pane>

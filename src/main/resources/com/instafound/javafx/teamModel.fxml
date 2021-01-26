@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="426.0" prefWidth="681.0" stylesheets="@settingsOfCSS.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.instafound.javafx.controller.TeamController">
+   <children>
+      <Label fx:id="labelCountMembersOfTeam" alignment="CENTER" layoutX="-1.0" layoutY="337.0" prefHeight="17.0" prefWidth="683.0" text="Number of members: 3">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelNumberOfCampaignsSupported" alignment="CENTER" layoutX="-2.0" layoutY="373.0" prefHeight="17.0" prefWidth="683.0" text="Number of campaigns supported: 1">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Pane fx:id="areaTeamButton" layoutX="169.0" prefHeight="341.0" prefWidth="343.0">
+         <children>
+            <Circle id="circleTeamShape" fx:id="circleImageTeam" fill="#dddddd" layoutX="172.0" layoutY="171.0" onMouseClicked="#showMembersOfTeam" radius="161.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+            <Label fx:id="nameOfTeamLabel" alignment="CENTER" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="16.0" layoutY="155.0" mouseTransparent="true" onMouseClicked="#showMembersOfTeam" prefHeight="45.0" prefWidth="312.0" style="-fx-background-color: black; -fx-background-color: rgba(0, 0, 0, 0.1); -fx-background-radius: 12px 42px 12px 42px;" text="Team" textFill="WHITE">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+            <Button id="leaveTeamButton" fx:id="buttonDeleteOrLeaveTeam" layoutX="200.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#deleteOrLeaveTeam" opacity="0.0" prefHeight="45.0" prefWidth="144.0" text="leave team" />
+            <Label id="showMembersLabel" layoutX="103.0" layoutY="210.0" mouseTransparent="true" opacity="0.0" text="click to show members" textFill="#008fff">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</Pane>

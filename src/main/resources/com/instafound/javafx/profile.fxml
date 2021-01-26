@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="profilePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1508.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.instafound.javafx.controller.ProfileController">
+   <children>
+      <Pane fx:id="mainProfilePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1508.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+      <BorderPane prefHeight="900.0" prefWidth="1508.0">
+         <center>
+            <Pane prefHeight="243.0" prefWidth="1508.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="labelLocationProfile" layoutX="843.0" layoutY="80.0" prefHeight="35.0" prefWidth="663.0" text="91011, Sicily, Italy">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </center>
+         <top>
+            <Pane prefHeight="144.0" prefWidth="1508.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="30.0" layoutY="60.0" text="friends suggested">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <HBox fx:id="containerSuggestedFriends" layoutX="270.0" prefHeight="144.0" prefWidth="1211.0" />
+                  <ProgressIndicator fx:id="progressIndicatorFriendsSuggested" layoutX="231.0" layoutY="66.0" prefHeight="24.0" prefWidth="27.0" visible="false" />
+               </children>
+            </Pane>
+         </top>
+         <bottom>
+            <Pane prefHeight="519.0" prefWidth="1508.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ScrollPane layoutX="31.0" layoutY="306.0" prefHeight="200.0" prefWidth="1455.0" style="-fx-background-color: transparent; -fx-hbar-policy: never; -fx-vbar-policy: never;">
+                     <content>
+                        <HBox fx:id="containerCampaignsFollowed" prefHeight="202.0" prefWidth="1452.0" />
+                     </content>
+                  </ScrollPane>
+                  <ScrollPane layoutX="28.0" layoutY="63.0" prefHeight="200.0" prefWidth="1456.0" style="-fx-background-color: transparent; -fx-hbar-policy: never; -fx-vbar-policy: never;">
+                     <content>
+                        <HBox fx:id="containerCampaignsCreated" prefHeight="202.0" prefWidth="1453.0" />
+                     </content>
+                  </ScrollPane>
+                  <Label layoutX="26.0" layoutY="19.0" text="Campaigns created">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="28.0" layoutY="265.0" text="Campaigns you follow">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <ProgressIndicator fx:id="progressIndicatorCampaignsCreated" layoutX="245.0" layoutY="25.0" prefHeight="25.0" prefWidth="25.0" visible="false" />
+                  <ProgressIndicator fx:id="progressIndicatorCampaignsFollowed" layoutX="278.0" layoutY="272.0" prefHeight="25.0" prefWidth="29.0" visible="false" />
+               </children>
+            </Pane>
+         </bottom>
+      </BorderPane>
+      <Circle fx:id="circleImageView" fill="DODGERBLUE" layoutX="732.0" layoutY="257.0" radius="100.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Label fx:id="labelUsernameProfile" layoutX="840.0" layoutY="177.0" prefHeight="39.0" prefWidth="670.0" style="-fx-font-weight: bold;" text="username">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="6.0" layoutY="14.0" onMouseClicked="#backToHome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/leftArrow.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="28.0" layoutY="6.0" onMouseClicked="#backToHome" text="come back" textFill="#00a1ff">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+         <ImageView fitHeight="41.0" fitWidth="41.0" layoutX="773.0" layoutY="164.0" onMouseClicked="#openUrlPanel" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@images/modifyUrl.png" />
+            </image>
+         </ImageView>
+      </Pane>
+      <Pane fx:id="statisticsPane" layoutX="125.0" layoutY="123.0" prefHeight="675.0" prefWidth="1258.0" style="-fx-background-color: white;" stylesheets="@settingsOfCSS.css" visible="false">
+         <children>
+            <ImageView fx:id="closeStatisticsPane" fitHeight="41.0" fitWidth="47.0" layoutX="1227.0" layoutY="-50.0" onMouseClicked="#closeStatisticsPane" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/CloseIcon2.png" />
+               </image>
+            </ImageView>
+            <BorderPane prefHeight="675.0" prefWidth="1259.0">
+               <top>
+                  <Pane prefHeight="47.0" prefWidth="1259.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label fx:id="titleStatisticLabel" alignment="CENTER" layoutY="-1.0" prefHeight="55.0" prefWidth="1256.0" text="statistics of Title campaign">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </top>
+               <center>
+                  <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <BarChart fx:id="barChartStatisticsCampaign" layoutX="39.0" layoutY="19.0" prefHeight="506.0" prefWidth="1185.0" style="-fx-background-color: transparent;" styleClass="chart-bar-donations">
+                          <xAxis>
+                            <CategoryAxis label="Date" side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis fx:id="barCharYLabel" label="average" side="LEFT" />
+                          </yAxis>
+                        </BarChart>
+                     </children>
+                  </Pane>
+               </center>
+               <bottom>
+                  <Pane prefHeight="79.0" prefWidth="1259.0" style="-fx-background-color: #fafafa;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button id="buttonShowDonations" fx:id="showDonationsTrendButton" layoutX="305.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#showDonationsTrend" prefHeight="57.0" prefWidth="272.0" text="shows donation's trend">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Button>
+                        <Button id="buttonShowFollowers" fx:id="showFollowersTrendButton" layoutX="743.0" layoutY="13.0" mnemonicParsing="false" onMouseClicked="#showFollowersTrend" prefHeight="57.0" prefWidth="264.0" text="shows follower's trend">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+               </bottom>
+            </BorderPane>
+         </children>
+      </Pane>
+      <Pane fx:id="newUrlPane" layoutX="173.0" layoutY="373.0" prefHeight="187.0" prefWidth="1166.0" visible="false">
+         <children>
+            <Label layoutX="6.0" prefHeight="187.0" prefWidth="58.0" text="Url:">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textFieldNewUrl" layoutX="50.0" layoutY="82.0" prefHeight="25.0" prefWidth="1104.0" style="-fx-background-color: white;" />
+            <Label fx:id="closeNewUrlPaneButton" alignment="CENTER" layoutX="1126.0" layoutY="14.0" onMouseClicked="#closeUrlPane" prefHeight="25.0" prefWidth="28.0" text="X">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Button layoutX="50.0" layoutY="123.0" mnemonicParsing="false" onMouseClicked="#saveNewUrl" style="-fx-background-color: white;" text="save" />
+         </children>
+      </Pane>
+   </children>
+</Pane>

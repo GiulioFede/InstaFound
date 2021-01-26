@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="465.0" prefWidth="589.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.instafound.javafx.controller.PreviewCampaignController">
+   <children>
+      <Label fx:id="labelTitleCampaignPreview" layoutX="2.0" layoutY="14.0" prefHeight="17.0" prefWidth="453.0" text="Titolo campagna">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="labelOrganizerPreview" layoutX="4.0" layoutY="38.0" prefHeight="17.0" prefWidth="319.0" text="Organizer" textFill="#ff8400">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Pane layoutX="2.0" layoutY="64.0" prefHeight="290.0" prefWidth="586.0">
+         <children>
+            <ImageView fx:id="imageViewCampaignPreview" fitHeight="290.0" fitWidth="584.0" pickOnBounds="true" style="-fx-background-radius: 5;">
+               <image>
+                  <Image url="@images/nature.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="2.0" layoutY="64.0" onMouseClicked="#openCampaignDetails" prefHeight="290.0" prefWidth="583.0">
+         <children>
+            <Label id="showOpenCampaign" alignment="CENTER" opacity="0.0" prefHeight="290.0" prefWidth="585.0" stylesheets="@settingsOfCSS.css" text="show more" textFill="#0062ff" />
+            <Label fx:id="labelNumberOfDonationsPreview" layoutY="239.0" prefHeight="27.0" prefWidth="97.0" style="-fx-background-color: #00ff08;" text="120 DONATIONS" />
+            <Label layoutX="416.0" layoutY="-5.0" prefHeight="24.0" prefWidth="167.0" style="-fx-background-color: white;" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Light" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelCategoryPreview" alignment="CENTER" layoutX="417.0" layoutY="-6.0" prefHeight="24.0" prefWidth="167.0" style="-fx-background-color: #00092e;" text="Categoria" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Light" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="2.0" layoutY="365.0" prefHeight="90.0" prefWidth="585.0">
+         <children>
+            <ProgressBar fx:id="progressBarAchivedPreview" layoutX="2.0" layoutY="33.0" prefHeight="21.0" prefWidth="583.0" progress="0.77" style="-fx-text-box-border: transparent;-fx-control-inner-background: transparent;" />
+            <Label fx:id="labelTotalRequiredPreview" layoutX="25.0" layoutY="3.0" text="Total Required: 500.000$" />
+            <Label fx:id="labelTotalAchivedPreview" layoutX="457.0" layoutY="14.0" text="Total Achived: 420.000$" textFill="#00baff" />
+            <ImageView fitHeight="18.0" fitWidth="19.0" layoutX="4.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/coin.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</Pane>

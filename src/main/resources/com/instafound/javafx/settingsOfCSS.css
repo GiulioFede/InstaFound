@@ -1,0 +1,595 @@
+
+#buttonAll {
+    -fx-background-color: #d9d9d9;
+    -fx-background-radius: 22;
+    -fx-text-fill: black;
+    -fx-font-size: 18;
+}
+
+#buttonAll:hover{
+ -fx-font-weight: bold;
+ -fx-background-color: white;
+ -fx-font-size: 17;
+ -fx-text-fill: #d9d9d9;
+ -fx-opacity: 1;
+}
+
+#buttonAll:pressed{
+	
+ -fx-background-color: #FFF300;
+ -fx-text-fill: red;
+ -fx-border-color: #FFF300;
+
+}
+
+
+#buttonSpeseMediche {
+    -fx-background-color: yellow;
+    -fx-background-radius: 22;
+    -fx-text-fill: black;
+    -fx-font-size: 18;
+}
+
+#buttonSpeseMediche:hover{
+ -fx-font-weight: bold;
+ -fx-background-color: white;
+ -fx-font-size: 17;
+ -fx-text-fill: #FFF300;
+ -fx-opacity: 1;
+
+
+}
+
+#buttonSpeseMediche:pressed{
+	
+ -fx-background-color: #FFF300;
+ -fx-text-fill: black;
+ -fx-border-color: #FFF300;
+
+}
+
+
+
+#buttonEnvironment {
+    -fx-background-color: #04E800;
+    -fx-background-radius: 22;
+    -fx-text-fill: white;
+    -fx-font-size: 18;
+}
+
+#buttonEnvironment:hover{
+ -fx-font-weight: bold;
+ -fx-background-color: white;
+ -fx-text-fill: #04E800;
+ -fx-font-size: 17;
+ -fx-opacity: 1;
+
+}
+
+#buttonEnvironment:pressed{
+	
+ -fx-background-color: #04E800;
+ -fx-text-fill: black;
+ -fx-border-color: #04E800;
+
+}
+
+#buttonNoProfit {
+    -fx-background-color: #0080FF;
+    -fx-background-radius: 22;
+    -fx-text-fill: white;
+    -fx-font-size: 18;
+}
+
+#buttonNoProfit:hover{
+ -fx-font-weight: bold;
+ -fx-background-color: white;
+ -fx-text-fill: #0080FF;
+ -fx-font-size: 17;
+ -fx-opacity: 1;
+
+}
+
+#buttonNoProfit:pressed{
+	
+ -fx-background-color: #0080FF;
+ -fx-text-fill: black;
+ -fx-border-color: #0080FF;
+
+}
+
+#buttonCreativity {
+    -fx-background-color: #FF0064;
+    -fx-background-radius: 22;
+    -fx-text-fill: white;
+    -fx-font-size: 18;
+}
+
+#buttonCreativity:hover{
+ -fx-font-weight: bold;
+ -fx-background-color: white;
+ -fx-text-fill: #FF0064;
+ -fx-font-size: 17;
+ -fx-opacity: 1;
+
+}
+
+#buttonCreativity:pressed{
+	
+ -fx-background-color: #FF0064;
+ -fx-text-fill: black;
+ -fx-border-color: #FF0064;
+
+}
+
+#buttonAnimals {
+    -fx-background-color: #FF9B00;
+    -fx-background-radius: 22;
+    -fx-text-fill: white;
+    -fx-font-size: 18;
+}
+
+#buttonAnimals:hover{
+ -fx-font-weight: bold;
+ -fx-background-color: white;
+ -fx-text-fill: #FF9B00;
+ -fx-font-size: 17;
+ -fx-opacity: 1;
+
+}
+
+#buttonAnimals:pressed{
+	
+ -fx-background-color: transparent;
+ -fx-text-fill: black;
+ -fx-border-color: #FF9B00;
+
+}
+
+#tableViewDonorsRank {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-insets: -1 -1 0 0;
+}
+
+#tableViewDonorsRank .column-header-background .filler {
+    -fx-background-color: transparent;
+}
+
+#tableViewDonorsRank .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+#tableViewDonorsRank .corner {
+    -fx-background-color: transparent;
+}
+
+#tableViewDonorsRank .column-header,
+#tableViewDonorsRank .column-header .filler,
+#tableViewDonorsRank .column-header-background{
+    -fx-background-color: linear-gradient(to bottom,  #151928,  #151925);
+    -fx-background-radius: 7px 7px 0px 0px;
+}
+
+
+#tableViewDonorsRank .table-cell{
+    -fx-border-color: transparent;
+    -fx-padding: 2 0 2 10px;
+}
+
+#titleCampaignPreview { 
+                /*setting alpha = 0.1*/ 
+                -fx-background-color: rgba(0, 0, 0, 0.6); 
+ 		-fx-font-weight: bold;
+		-fx-text-fill: white;
+            }
+#showOpenCampaign:hover {
+                -fx-opacity: 1;
+                -fx-background-color: rgba(0, 0, 0, 0.7); 
+ 		-fx-font-weight: bold;
+		-fx-text-fill: white;
+}
+
+#viewStatisticsLabel:hover {
+	 	-fx-font-weight: bold;
+ 		-fx-font-size: 21;
+} 
+
+#followedLabel:hover {
+	 	-fx-font-weight: bold;
+ 		-fx-font-size: 21;
+} 
+
+
+#deleteFriendButton:hover{
+ -fx-opacity: 1;
+}
+
+
+
+#areaTeamButton:hover > #leaveTeamButton {  -fx-opacity: 1; }
+#areaTeamButton:hover > #showMembersLabel{  -fx-opacity: 1; }
+
+#imagecropper {
+  -fx-width: 100px;
+  -fx-height: 100px;
+  position: relative;
+  overflow: hidden;
+  -fx-border-radius: 50%;
+}
+
+#imagecropper {
+ -fx-border-radius: 50%;
+}
+
+#leaveTeamButton {
+    -fx-background-color: red;
+    -fx-background-radius: 22;
+    -fx-text-fill: white;
+    -fx-font-size: 18;
+}
+
+#leaveTeamButton:hover{
+ -fx-background-color: white;
+ -fx-text-fill: red;
+ -fx-font-size: 17;
+
+}
+
+#leaveTeamButton:pressed{
+ -fx-font-weight: bold;
+ -fx-background-color: white;
+ -fx-text-fill: black;
+
+}
+
+#circleTeamShape:hover{
+ -fx-fill: #2c2c2c;
+ -fx-scale-x: 1.05;
+ -fx-scale-y: 1.05;
+}
+
+#circleTeamShape:pressed{
+ -fx-fill: white;
+ -fx-scale-x: 1.05;
+ -fx-scale-y: 1.05;
+}
+
+#areaAddMember:hover > #addMemberLabel{  -fx-opacity: 1; }
+
+#addMemberLabel:hover{
+ -fx-text-fill: white;
+ -fx-font-size: 16;
+
+}
+
+#addMemberLabel:pressed{
+ -fx-font-weight: bold;
+ -fx-background-color: #0080ff;
+ -fx-text-fill: white;
+ -fx-font-size: 14;
+}
+
+
+#circleImageMember:hover{
+ -fx-scale-x: 1.05;
+ -fx-scale-y: 1.05;
+}
+
+#circleImageMember:pressed{
+ -fx-opacity: 0.6;
+ -fx-scale-x: 1.05;
+ -fx-scale-y: 1.05;
+}
+
+#deleteMemberLabel:pressed{ 
+ -fx-scale-x: 1.05;
+ -fx-scale-y: 1.05;
+ -fx-text-fill: red;
+}
+
+
+#addFriendAsMemberButton {
+    -fx-background-color: #ffcc00;
+    -fx-background-radius: 22;
+    -fx-text-fill: white;
+    -fx-font-size: 18;
+}
+
+#addFriendAsMemberButton:hover{
+ -fx-font-weight: bold;
+ -fx-background-color: white;
+ -fx-text-fill: #ffcc00;
+ -fx-font-size: 17;
+
+}
+
+#addFriendAsMemberButton:pressed{
+	
+ -fx-background-color: #ffcc00;
+ -fx-text-fill: black;
+ -fx-border-color: #ffcc00;
+
+}
+
+
+#createNewTeamButton {
+    -fx-background-color: #00a1ff;
+    -fx-background-radius: 22;
+    -fx-text-fill: white;
+    -fx-font-size: 18;
+}
+
+#createNewTeamButton:hover{
+ -fx-font-weight: bold;
+ -fx-background-color: white;
+ -fx-text-fill: #00a1ff;
+ -fx-font-size: 17;
+
+}
+
+#createNewTeamButton:pressed{
+	
+ -fx-background-color: #00a1ff;
+ -fx-text-fill: black;
+ -fx-border-color: #00a1ff;
+
+}
+
+
+#newTeamLabel{
+    -fx-background-color: #00ff00;
+    -fx-background-radius: 22;
+    -fx-text-fill: white;
+    -fx-font-size: 18;
+}
+
+
+#createNewCampaignButton {
+    -fx-background-color: #00a1ff;
+    -fx-background-radius: 22;
+    -fx-text-fill: white;
+    -fx-font-size: 22;
+}
+
+#createNewCampaignButton:hover{
+ -fx-font-weight: bold;
+ -fx-background-color: white;
+ -fx-text-fill: #00a1ff;
+ -fx-font-size: 21;
+
+}
+
+#createNewCampaignButton:pressed{
+	
+ -fx-background-color: #00a1ff;
+ -fx-text-fill: black;
+ -fx-border-color: #00a1ff;
+}
+
+
+
+.buttonsHome {
+    -fx-background-color: #00a1ff;
+    -fx-background-radius: 22;
+    -fx-text-fill: white;
+    -fx-font-size: 12;
+}
+
+.buttonsHome:hover{
+ -fx-font-weight: bold;
+ -fx-background-color: white;
+ -fx-text-fill: #00a1ff;
+ -fx-font-size: 21;
+
+}
+
+.buttonsHome:pressed{
+	
+ -fx-background-color: #00a1ff;
+}
+
+.buttonsHomePressed {
+ -fx-text-fill: #00a1ff;
+ -fx-font-size: 15;
+}
+
+.unselectedButtonsOnCreateCampaign {
+	-fx-opacity: 0.2;
+}
+
+.selectedButtonOnCreateCampaign {
+	-fx-opacity: 1;
+}
+
+#buttonShowDonations {
+    -fx-background-color: #006bff;
+    -fx-background-radius: 22;
+    -fx-text-fill: white;
+    -fx-font-size: 18;
+}
+
+#buttonShowDonations:hover{
+ -fx-font-weight: bold;
+ -fx-background-color: white;
+ -fx-font-size: 17;
+ -fx-text-fill: #006bff;
+ -fx-opacity: 1;
+}
+
+#buttonShowDonations:pressed{
+	
+ -fx-background-color: white;
+ -fx-text-fill: black;
+ -fx-border-color: white;
+}
+
+#buttonShowFollowers {
+    -fx-background-color: #ff0066;
+    -fx-background-radius: 22;
+    -fx-text-fill: white;
+    -fx-font-size: 18;
+}
+
+#buttonShowFollowers:hover{
+ -fx-font-weight: bold;
+ -fx-background-color: white;
+ -fx-font-size: 17;
+ -fx-text-fill: #ff0066;
+ -fx-opacity: 1;
+}
+
+#buttonShowFollowers:pressed{
+	
+ -fx-background-color: white;
+ -fx-text-fill: black;
+ -fx-border-color: white;
+}
+
+
+
+#buttonShowGoal {
+    -fx-background-color: #fc5603;
+    -fx-background-radius: 22;
+    -fx-text-fill: white;
+    -fx-font-size: 18;
+}
+
+#buttonShowGoal:hover{
+ -fx-font-weight: bold;
+ -fx-background-color: white;
+ -fx-font-size: 17;
+ -fx-text-fill: #fc5603;
+ -fx-opacity: 1;
+}
+
+#buttonShowGoal:pressed{
+	
+ -fx-background-color: white;
+ -fx-text-fill: black;
+ -fx-border-color: white;
+}
+
+.unSelectedStatisticsButtons{
+ -fx-text-fill: #fc5603;
+ -fx-font-size: 15;
+  -fx-opacity: 0.5;
+}
+
+.selectedStatisticsButton {
+  -fx-opacity: 1;
+}
+
+.errorField {
+ -fx-border-color: red;
+}
+
+.correctField {
+ -fx-border-color: transparent;
+}
+
+.errorLabel {
+ -fx-text-fill: red;
+}
+
+.correctLabel {
+ -fx-text-fill: green;
+}
+
+
+.buttonDonateCampaign {
+    -fx-background-color: #0088ff;
+    -fx-background-radius: 22;
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+}
+
+.buttonDonateCampaign:hover{
+ -fx-font-weight: bold;
+ -fx-background-color: white;
+ -fx-font-size: 20;
+ -fx-text-fill:  #0088ff;
+ -fx-opacity: 1;
+
+
+}
+
+.buttonDonateCampaign:pressed{
+	
+ -fx-background-color:  #0088ff;
+ -fx-text-fill: black;
+ -fx-border-color:  #0088ff;
+
+}
+
+
+.buttonAddFriend {
+    -fx-background-color: #ff7700;
+    -fx-background-radius: 5;
+    -fx-text-fill: white;
+    -fx-font-size: 10;
+}
+
+
+.buttonAddFriend:hover{
+ -fx-font-weight: bold;
+ -fx-background-color: white;
+ -fx-font-size: 10;
+ -fx-text-fill:  #ff7700;
+ -fx-opacity: 1;
+}
+
+.buttonAddFriend:pressed{
+	
+ -fx-background-color: #ff7700;
+ -fx-text-fill: black;
+ -fx-border-color:  #ff7700;
+
+}
+
+
+.labelAddFriend{
+ -fx-font-weight: bold;
+ -fx-font-size: 10;
+ -fx-background-radius: 50;
+ -fx-text-fill:  #ff7700;
+
+}
+
+.addSuggestedFriend:hover{
+    -fx-text-fill: green;
+    -fx-font-size: 13;
+
+}
+
+.areaAddFriend:hover > .labelAddFriend { -fx-opacity: 1;}
+
+
+.loadMoreButton {
+    -fx-background-color: #D7CF07;
+    -fx-background-radius: 22;
+    -fx-text-fill: black;
+    -fx-font-size: 18;
+}
+
+.loadMoreButton:hover{
+ -fx-font-weight: bold;
+ -fx-background-color: white;
+ -fx-font-size: 17;
+ -fx-text-fill: #D7CF07;
+ -fx-opacity: 1;
+}
+
+.loadMoreButton:pressed{
+	
+ -fx-background-color: #D7CF07;
+ -fx-text-fill: black;
+ -fx-border-color: #D7CF07;
+
+}
+
+
+
+
+
