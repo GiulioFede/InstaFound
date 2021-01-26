@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"},{"v":{"$numberInt":"2"},"key":{"category":{"$numberDouble":"1.0"},"startDate":{"$numberDouble":"-1.0"}},"name":"category_1_startDate_-1"}],"uuid":"52763885f79847fbab811f413aed72fa","collectionName":"campaigns"}
